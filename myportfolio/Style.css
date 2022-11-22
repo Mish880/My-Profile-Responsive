@@ -494,6 +494,11 @@ button{
         transition: ease .20s;
         cursor: pointer;
     }
+    .contact-form form .btn:hover{
+        border:2px solid #2ecc71;
+        background: transparent;
+        transform: scale(1.1);
+    }
 
 @media only screen and (max-width:700px) {
 
@@ -595,5 +600,18 @@ button{
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .contact{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1{
+        font-size: 60px;
+    }
+
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+}
 
 
