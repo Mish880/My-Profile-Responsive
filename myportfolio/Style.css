@@ -334,6 +334,96 @@ button{
     z-index : 2;
 }
 
+.Education {
+    background-color: #161922;
+    padding-top:20px;
+}
+.Eheader{
+    text-align:center;
+    color:#fff;
+    padding:1rem;
+    position: relative;
+}
+
+.Eheader:after{
+    content:'';
+    position: absolute;
+    bottom:23%;
+    left:50%;
+    transform: translateX(-50%);
+    height:4px;
+    width:100px;
+    background-color: #2ecc71;
+}
+ .Educationcontainer{
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     grid-gap: 1rem;
+     padding: 1rem 80px;
+     font-size: 1.2rem;
+ }
+
+ .Edu-box{
+     padding:1rem;
+     color:#ddd;
+     cursor:pointer;
+ }
+
+  .Edu-box:hover > .Edu-title:after,.Edu-box:hover > .Edu-title:before{
+      width:35px;
+  }
+
+  .Edu-box:hover .eduimg{
+      transform:translateY(-10px);
+      transition:.5s;
+  }
+
+  .Edu-title{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+  }
+
+  .Edu-title:after{
+      content: '';
+      position:absolute;
+      bottom:0;
+      right:50%;
+      width:0;
+      height:4px;
+      border-radius: 2px 0 0 2px;
+      background-color:#2ecc71;
+      transition: .5s;
+  }
+
+.Edu-title:before{
+    content: '';
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:0;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color:#2ecc71;
+    transition: .5s;
+}
+
+
+   .Edu-title h3{
+       color: #f9690e;
+       margin: 0.5rem;
+   }
+
+   .Edu-icon{
+       width: 150px;
+   }
+
 @media only screen and (max-width:700px) {
 
     nav ul{
@@ -415,6 +505,21 @@ button{
 
 @media only screen and (max-width:650px) {
     .skillcontiner{
+        grid-template-columns:  1fr;
+    }
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .Educationcontainer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .Educationcontainer{
         grid-template-columns:  1fr;
     }
 }
