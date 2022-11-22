@@ -665,4 +665,15 @@ button{
     }
 }
 
+@media only screen and (max-width:700px) {
+    .footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
 
+@media only screen and (max-width:650px) {
+    .footer-bottom{
+        grid-template-columns:  1fr;
+    }
+}
