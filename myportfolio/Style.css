@@ -94,9 +94,16 @@ button{
     padding: 12px 10px;
     outline: none;
     color: #fff;
-    background: linear-gradient(to right, #6c7a89, #2e3131);
+    background: linear-gradient(to right, #6f42c1, #0dcaf0);
     border-radius: 6px;
     cursor:pointer;
+}
+
+button a{
+    color:black;
+    text-decoration: none;
+    font-family: "Arial Narrow";
+
 }
 
 .col-1::after{
@@ -203,6 +210,11 @@ button{
      border-radius: 30px;
      font-size:17px;
      font-weight:bold;
+  }
+
+  .buttonone a{
+      color:black;
+      text-decoration: none;
   }
 
 .buttonone:hover{
